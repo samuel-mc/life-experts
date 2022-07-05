@@ -15,6 +15,8 @@ html {
 
     --light-blue: #0F75BD;
 
+    --gray-footer: #d0d0d0;
+
     /* Tamaño de fuentes */
     --sm: 1.6rem;
     --md: 2rem;
@@ -87,7 +89,24 @@ html {
     font-size: var(--lg);
 }
 
+footer{
+    width: 100%;
+    background-color: var(--gray-footer);
+    padding: 2% 8%;
+    display: flex;
+    column-gap: 3em;
+}
+.logo__footer{
+    width: 50px;
+}
 
+.footer__blog > a{
+    color: black;
+}
+.icon{
+    width: 15px;
+    fill: var(--light-blue);
+}
 @media (min-width: 320px) {
     /* Clases Reutilizables */
     .padding {
