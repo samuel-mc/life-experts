@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <title>Life Experts</title>
 </head>
@@ -22,7 +23,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                        <a class="nav-link active" aria-current="page" href="#">¿Como lo hacemoss?</a>
+                        <a class="nav-link active" aria-current="page" href="#">¿Como lo hacemos?</a>
                         <a class="nav-link active" aria-current="page" href="#">Seguro médicos mayores</a>
                         <a class="nav-link active" aria-current="page" href="#">Seguro educativo</a>
                         <a class="nav-link active" aria-current="page" href="#">Seguro de retiro</a>
@@ -52,12 +53,127 @@
         <section class="index__main--servicios padding">
             <h2>Estos son algunos de nuestros servicios</h2>
             <div class="servicios__items">
-                <div>
+                <div class="servicios__item">
+                    <img src="./assets/homeIcon.jpg" alt="">
                     <p>Seguro de gastos médicos mayores</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="servicios__item">
+                    <img src="./assets/homeIcon.jpg" alt="">
+                    <p>Seguro educativo</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="servicios__item">
+                    <img src="./assets/homeIcon.jpg" alt="">
+                    <p>Seguro de retiro</p>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </section>
 
+        <section class="section__qsomos">
+            <div class="qsomos__content padding">
+                <h2>¿Quiénes somos?</h2>
+                <h5>Más de una década ayudándote a cumplir tus sueños</h3>
+                <p>Hacemos a la gente FELIZ y hacemos sus vidas mejores al perfeccionar su presente y su futuro financiero con asesoría excelente y sencilla acerca de nuestros productos y de su estrategia patrimonial en general.</p>
+                <button class="button button--purple">Solicitar Asesoría</button>
+            </div>
+            <div>
+                <img src="./assets/qsomos.png" alt="">
+            </div>
+        </section>
+        
+        <section class="section__nproceso padding">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active carousel__cards">
+                    <div class="carousel__card">
+                        <img src="./assets/situacionactual.jpg" alt="">
+                        <div>
+                            <h4>Situación financiera actual</h4>
+                            <p>Analizamos en donde estás parado al día de hoy para evaluar lo que realmente necesitas. La idea es que puedas comenzar hoy, sin que esto represente un problema financiero.</p>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/presupuesto.jpg" alt="">
+                        <div>
+                            <h4>Presupuesto</h4>
+                            <p>Si no lo conoces te ayudamos a hacer un presupuesto para detectar correctamente tu capacidad de ahorro y tu necesidad de protección.</p>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/situacionactual.jpg" alt="">
+                        <div>
+                            <h4>Protección</h4>
+                            <p>Blindamos completamente tu patrimonio para que pase lo que pase nunca pierdas lo que te ha costado construir con tantos años de esfuerzo y sacrificio.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel__cards">
+                    <div class="carousel__card">
+                        <img src="./assets/metas.jpg" alt="">
+                        <div>
+                            <h4>Metas</h4>
+                            <p>El primer paso es conocerte y conocer tus metas. Toda nuestra asesoría se enfoca en lograr TUS metas patrimoniales.</p>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/prioridades.jpg" alt="">
+                        <div>
+                            <h4>Prioridades</h4>
+                            <p>Analizaremos tus prioridades actuales, hay metas importantes pero a veces hay prioridades que debemos tomar en cuenta.</p>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/obstaculos.jpg" alt="">
+                        <div>
+                            <h4>Obstáculos</h4>
+                            <p> También validamos si hay algún obstáculo que haya que resolver antes o a la par de tu plan patrimonial y te ayudamos a resolverlo. </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section class="section__nservicios">
+            <div>
+                <img src="./assets/qsomos.png" alt="">
+            </div>
+            <div class="qsomos__content padding">
+                <h2>Nuestros servicios especializados</h2>
+                <p>
+                    En Life Experts somos más que un despacho de Seguros, podemos ayudarte a planear toda tu vida
+                    patrimonial de manera integral. Nuestros clientes cuentan con varias horas al año de consultoría
+                    financiera adicional a la asesoría en planes de Seguros Patrimoniales.
+                </p>
+                <ul class="qsomos__content--ul">
+                    <li>Auditoria de seguros. </li>
+                    <li>Diseño de estrategias deducibles. </li>
+                    <li>Diseño de Planes de Ahorro de Largo Plazo. </li>
+                    <li>Seguro de Hombre Clave para empresas. </li>
+                    <li>Consultoría a la medida en finanzas personales y planeación patrimonial.. </li>
+                    <li>Productos financieros. </li>
+                    <li>Fondos educacionales. </li>
+                    <li>Seguros de gastos médicos mayores. </li>
+                    <li>Seguros que protegen a la mujer en caso de cáncer o problemas del embarazo. </li>
+                </ul>
+                <button class="button button--blue">Solicitar Asesoría</button>
+            </div>
+        </section>
         
     </main>
     <footer>
