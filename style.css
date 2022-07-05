@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Colores */
+    --color-white: #FFFFFF;
+
+    --light-blue: #0F75BD;
+
+    /* Tamaño de fuentes */
+    --sm: 1.6rem;
+    --md: 2rem;
+    --lg: 3.2rem;
+    --xl: 7.2rem;
+
+    /* Transitions */
+    --in: all 0.3s ease-in-out;
+    --out: all 0.6s ease-in-out;
+
+}
+
+/* Botones */
+.button {
+    border: none;
+    border-radius: 16px;
+    padding: 16px 32px;
+    font-size: var(--sm);
+}
+
+.button--transparent {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: transparent;
+    transition: var(--out);
+}
+
+.button--transparent:hover {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: var(--light-blue);
+    transition: var(--in);
+}
+
+/* Header */
+
+#navBar.bg-light{
+    font-size: var(--sm);
+    background-color: var(--color-white) !important;
+}
+
+#navBar .collapse {
+    justify-content: flex-end;
+}
+
+#navBar .navbar-nav .nav-link {
+    margin: 0 8px;
+}
+
+/* Página index */
+.index__main--hero {
+    position: relative;
+}
+.index__main--hero img {
+    width: 100%;
+}
+
+.index__main--hero .hero__text {
+    position: absolute;
+    top: 50%;
+    color: var(--color-white);
+    transform: translateY(-50%);
+}
+
+.index__main--hero .hero__text h1{
+    font-size: var(--xl);
+    color: var(--color-white);
+}
+
+.index__main--servicios h2 {
+    font-size: var(--lg);
+}
+
+
+@media (min-width: 320px) {
+    /* Clases Reutilizables */
+    .padding {
+        padding: 12px 32px;
+    }
+
+    /* Página index */
+    .index__main--hero .hero__text h1 {
+        font-size: var(--lg);
+        color: var(--color-white);
+    }
+    .index__main--hero .hero__text p {
+        font-size: var(--sm);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Clases Reutilizables */
+    .padding {
+        padding: 12px 64px;
+    }
+    
+    /* Página index */
+    .index__main--hero .hero__text h1 {
+        font-size: var(--xl);
+    }
+    .index__main--hero .hero__text p {
+        font-size: var(--md);
+        margin: 32px 0;
+    }
+}
