@@ -16,7 +16,7 @@ html {
     --light-pink: #FCF5F3;
     --purple: #92278F;
     --gray-footer: #d0d0d0;
-
+    --pink-form: #ffeafe;
     /* Tamaño de fuentes */
     --sm: 1.6rem;
     --md: 2rem;
@@ -27,12 +27,14 @@ html {
     --in: all 0.3s ease-in-out;
     --out: all 0.6s ease-in-out;
 
+    /*formas*/
+    --border-radius: 12px;
 }
 
 /* Botones */
 .button {
     border: none;
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     padding: 16px 28px;
     font-size: var(--sm);
 }
@@ -122,9 +124,14 @@ html {
     column-gap: 1em;
 }
 
+.credenciales h2{
+    font-size: var(--lg);
+}
+
 .container--credenciales > img{
     padding: 0% 1%;
 }
+
 .index__main--servicios{
     display: grid;
     align-items: center;
@@ -236,6 +243,53 @@ html {
     width: 100%;
 }
 
+/********INDEX MAPA SECCION ******/
+.mapa{
+    width: 100%;
+}
+.form__contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--light-blue);
+    text-align: center;
+    margin: 2% 8%;
+    row-gap: 1em;
+    column-gap: 1em;
+    min-width: min-content;
+    background-color: var(--color-white)
+}
+.form__contacto h2{
+    font-size: var(--lg);
+    grid-column: 1/3;
+}
+.form__contacto #mensaje, #nombreCom2, button {
+    grid-column: 1/3;
+}
+.form__contacto > .input{
+    border: 1px solid var(--light-blue);
+    background-color: var(--pink-form);
+}
+.form__contacto > textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+.form__contacto > button{
+    justify-self: center;
+}
+.index__contacto{
+    position: relative;
+    min-height: 1000px;
+    max-height: 1200px;
+}
+.form__contacto--sobreponer{
+    position: absolute;
+    margin: 0 auto;
+    top: 400px;
+    width: 100%;
+}
+/********FOOTER ******/
 footer{
     width: 100%;
     background-color: var(--gray-footer);
