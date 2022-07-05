@@ -89,11 +89,22 @@ html {
     font-size: var(--lg);
 }
 
+.credenciales{
+    margin: 5% 16%;
+    text-align: center;
+    column-gap: 1em;
+}
+
+.container--credenciales > img{
+    padding: 0% 1%;
+}
+
 footer{
     width: 100%;
     background-color: var(--gray-footer);
-    padding: 2% 8%;
-    display: flex;
+    padding: 4% 8%;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
     column-gap: 3em;
 }
 .logo__footer{
@@ -106,6 +117,7 @@ footer{
 .icon{
     width: 15px;
     fill: var(--light-blue);
+    margin: 0 1%;
 }
 @media (min-width: 320px) {
     /* Clases Reutilizables */
