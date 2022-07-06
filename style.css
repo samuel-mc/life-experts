@@ -227,6 +227,34 @@ html {
     width: 100%;
 }
 
+.section__opiniones {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: var(--light-blue);
+    align-items: center;
+}
+
+.section__opiniones h2{
+    font-size: var(--lg);
+}
+
+.opiniones__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.opinion {
+    background-color: var(--color-white);
+    font-size: var(--sm);
+    padding: 24px;
+}
+
+.opinion div{
+    display: flex;
+    align-items: center;
+}
+
 footer{
     width: 100%;
     background-color: var(--gray-footer);
