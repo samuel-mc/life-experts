@@ -13,6 +13,7 @@ html {
     /* Colores */
     --color-white: #FFFFFF;
     --light-blue: #0F75BD;
+    --blue-opiniones: #e4f0f9;
     --light-pink: #FCF5F3;
     --purple: #92278F;
     --gray-footer: #d0d0d0;
@@ -125,6 +126,13 @@ html {
 
 #navBar .navbar-nav .nav-link {
     margin: 0 8px;
+}
+
+/* Clases Reutilizables */
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 24px;
 }
 
 /* Página index */
@@ -279,7 +287,7 @@ html {
 .section__opiniones {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    background-color: var(--light-blue);
+    background-color: var(--blue-opiniones);
     align-items: center;
 }
 
@@ -295,6 +303,9 @@ html {
 
 .opinion {
     background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: var(--sm);
     padding: 24px;
 }
@@ -302,6 +313,10 @@ html {
 .opinion div{
     display: flex;
     align-items: center;
+}
+
+.opinion img {
+    width: 64px;
 }
 
 /********INDEX MAPA SECCION ******/
@@ -456,6 +471,64 @@ footer{
     fill: var(--light-blue);
     margin: 0 1%;
 }
+
+/* ============== Página de nostros ============ */
+.nosotros__mision {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    font-size: var(--md);
+}
+
+.nosotros__mision > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nosotros__mision h1 {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.nosotros__mision img {
+    width: 100%;
+}
+
+.nosotros__filosofia {
+    font-size: var(--sm);
+    background-color: var(--blue-opiniones);
+}
+
+.two__cols {
+    display: grid;
+    gap: 24px;
+}
+
+.nosotros__equipo > .title {
+    margin: 32px 0;
+    text-align: center;
+}
+.equipo__founder img {
+    width: 100%;
+}
+
+.equipo__founder {
+    position: relative;
+}
+
+.equipo__founder > div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    color: var(--color-white);
+}
+
+.equipo__text {
+    font-size: var(--sm);
+    margin: 32px 0;
+}
+
 @media (min-width: 320px) {
     /* Clases Reutilizables */
     .padding {
@@ -485,6 +558,15 @@ footer{
     .section__nservicios {
         grid-template-columns: 1fr;
     }
+
+    .nosotros__mision {
+        grid-template-columns: 1fr;
+    }
+
+    .two__cols {
+        grid-template-columns: 1fr;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -516,5 +598,14 @@ footer{
     .section__nservicios {
         grid-template-columns: 2fr 3fr;
     }
+
+    .nosotros__mision {
+        grid-template-columns: 5fr 4fr;
+    }
+
+    .two__cols {
+        grid-template-columns: 1fr 1fr;
+    }
+    
 
 }
