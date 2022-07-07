@@ -87,7 +87,7 @@ html {
     background-color: var(--green);
     color: var(--color-white);
     transition: var(--out);
-    width: 100%;
+    width: fit-content;
 }
 .button--green:hover {
     background-color: var(--light-blue);
@@ -112,6 +112,9 @@ html {
     color: var(--color-white) !important;
 }
 
+.w_all{
+    width: 100% !important;
+}
 
 /* Header */
 
@@ -500,6 +503,8 @@ select option{
 .beneficio__circ p{
     padding: 0 5%;
 }
+
+
 /*BANNER ZOOM Y COTIZAR GRID-- CONTACTO */
 .bannerContacto{
     text-align: center;
@@ -530,7 +535,13 @@ footer{
     fill: var(--light-blue);
     margin: 0 1%;
 }
-
+.icon__morado{
+    width: 100px !important;
+    height: 100px !important;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 360px;
+}
 /* ============== Página de nostros ============ */
 .nosotros__mision {
     display: grid;
@@ -563,7 +574,10 @@ footer{
     display: grid;
     gap: 24px;
 }
-
+.three__cols {
+    display: grid;
+    gap: 24px;
+}
 .nosotros__equipo > .title {
     margin: 32px 0;
     text-align: center;
@@ -625,7 +639,9 @@ footer{
     .two__cols {
         grid-template-columns: 1fr;
     }
-    
+    .three__cols {
+        grid-template-columns: 1fr;
+    }
     .beneficios{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 3fr 3fr 3fr;
@@ -671,6 +687,10 @@ footer{
 
     .two__cols {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .three__cols {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .beneficios{
