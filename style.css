@@ -364,7 +364,6 @@ html {
     margin: 0 auto;
     top: 400px;
     width: 100%;
-
 }
 /*BANNER WHATS Y COTIZAR GRID-- SEGUROS MAYORES */
 .segMayores__cotizar{
@@ -407,7 +406,25 @@ html {
     width: 100px;
     padding: 2% 16%;
 }
+/******** VIDEOS - TEXTO *****/
+.video__hero{
+    margin: 3% 4%;
+    position: relative;
+    min-height: 1000px;
+    max-height: 1200px;
+    background-size:cover;
+}
+.video__hero video{
+    width: 100%;
+    height: 1200px;
+}
 
+.video__texto--sobreponer{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
 /******** FORM COTIZAR PREMIUM ******/
 .form__cotizarPremium{
     width: 100%;
