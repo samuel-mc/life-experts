@@ -131,6 +131,10 @@ html {
     margin: 0 8px;
 }
 
+.navbar--logo {
+    width: 120px;
+}
+
 /* Clases Reutilizables */
 .title {
     font-size: var(--lg);
@@ -153,11 +157,44 @@ green{
 }
 
 .index__main--hero .hero__text {
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%; */
     color: var(--color-white);
-    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: translateY(-50%); */
 }
+
+.index__main--hero .hero__text--index {
+    background-image: url('./assets/indexHero.png');
+}
+
+.index__main--hero .hero__text--nosotros {
+    background-image: url('./assets/about_head.png');
+}
+
+.index__main--hero .hero__text--mayores {
+    background-image: url('./assets/heroGastosmayores.jpg');
+}
+
+.index__main--hero .hero__text--educativo {
+    background-image: url('./assets/educativo_head.jpg');
+}
+
+.index__main--hero .hero__text--retiro {
+    background-image: url('./assets/heroGastosmayores.jpg');
+}
+
+.index__main--hero .hero__text--blog {
+    background-image: url('./assets/comofuncoina_head.jpg');
+}
+
+.index__main--hero .hero__text--contacto {
+    background-image: url('./assets/heroContacto.jpg');
+}
+
+
 
 .index__main--hero .hero__text h1{
     font-size: var(--xl);
@@ -190,7 +227,7 @@ green{
 
 .servicios__items {
     display: grid;
-    gap: 24px;
+    gap: 12px;
 }
 
 .servicios__item {
@@ -247,16 +284,17 @@ green{
 }
 
 .qsomos__content--ul  li::before {
-    content: "\2022";
+    content: "🟢";
+    width: 2px;
+    height: 2px;
     color: var(--green);
     font-weight: bold;
     display: inline-block;
-    width: 1em; 
-    margin-left: -1em;
+    width: 28px; 
 }
 
 .section__nproceso {
-    margin: 32px 0;
+    margin: 80px 0;
 }
 
 .carousel-item.active.carousel__cards {
@@ -304,14 +342,23 @@ green{
     width: 100%;
 }
 
-.section__opiniones {
+.section__opiniones.padding {
     display: grid;
     background-color: var(--blue-opiniones);
     align-items: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .section__opiniones h2{
     font-size: var(--lg);
+}
+
+.section__opiniones button{
+    background-color: var(--color-white);
+    border-radius: 32px;
+    margin: 8px;
+    padding: 8px 32px;
 }
 
 .opiniones__container {
@@ -350,10 +397,11 @@ green{
     row-gap: 1em;
     column-gap: 1em;
     min-width: min-content;
-    background-color: var(--color-white)
+    background-color: var(--color-white);
+    font-size: var(--sm);
 }
 .form__contacto > .input{
-    border: 1px solid var(--light-blue);
+    border: none;
     background-color: var(--pink-form);
 }
 .form__contacto > textarea{
@@ -422,6 +470,7 @@ green{
 }
 .whatsapp__contacto{
     display: grid;
+    align-items: center;
 }
 .banner__whatsapp span{
     color: var(--purple);
@@ -528,8 +577,8 @@ footer{
     margin: 0 1%;
 }
 .icon__morado{
-    width: 100px !important;
-    height: 100px !important;
+    width: 60px !important;
+    height: 60px !important;
     background-color: var(--color-white);
     padding: 20px;
     border-radius: 360px;
@@ -594,10 +643,25 @@ footer{
     margin: 32px 0;
 }
 
+.qsomos__content.quote .title{
+    font-size: var(--lg);
+}
+.qsomos__content.quote p{
+    font-size: var(--lg);
+}
+
+.blog__video--grande {
+    width: 100%;
+}
+
 @media (min-width: 320px) {
     /* Clases Reutilizables */
     .padding {
         padding: 12px 32px;
+    }
+
+    .padding--hero {
+        padding: 32px;
     }
 
     /* Página index */
@@ -608,29 +672,13 @@ footer{
     .index__main--hero .hero__text p {
         font-size: var(--sm);
     }
-    .index__main--servicios{
-        grid-template-columns: 1fr;
-    }
 
-    .section__qsomos {
-        grid-template-columns: 1fr;
-    }
-
-    .servicios__items {
-        grid-template-columns: 1fr;
-    }
-
-    .section__nservicios {
-        grid-template-columns: 1fr;
-    }
-
-    .nosotros__mision {
-        grid-template-columns: 1fr;
-    }
-
-    .two__cols {
-        grid-template-columns: 1fr;
-    }
+    .index__main--servicios,
+    .section__qsomos ,
+    .servicios__items ,
+    .section__nservicios ,
+    .nosotros__mision ,
+    .two__cols ,
     .three__cols {
         grid-template-columns: 1fr;
     }
@@ -672,7 +720,11 @@ footer{
 @media (min-width: 768px) {
     /* Clases Reutilizables */
     .padding {
-        padding: 12px 64px;
+        padding: 24px 64px;
+    }
+
+    .padding--hero {
+        padding: 64px;
     }
     
     /* Página index */
