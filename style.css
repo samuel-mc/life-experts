@@ -802,7 +802,17 @@ footer{
         grid-template-columns: 1fr;
         row-gap: 1em;
         padding: 8% 4%;
+        justify-items: center;
     }
+
+    #footer__datos > * {
+        margin-bottom: 24px;
+    }
+
+    footer > *{
+        margin-bottom: 24px;
+    }
+
     .credenciales{
         padding-top: 100px;
     }
@@ -811,7 +821,7 @@ footer{
         max-width: 45%;
     }
     .beneficio__circ img{
-        width: 50%;
+        width: 30%;
     }
 
 }
@@ -918,12 +928,13 @@ footer{
         grid-template-columns: 30% 30% 40%;
         padding: 2% 5%;
     }
+
     .quitar-width .button__blue--group{
         min-width: 15%;
         max-width: 20%;
     }
     .beneficio__circ img{
-        width: 50%;
+        width: 30%;
     }
     .credenciales{
         padding-top: 0;
