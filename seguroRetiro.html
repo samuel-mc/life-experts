@@ -23,7 +23,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
-                        <a class="nav-link active" aria-current="page" href="./nosotros.html#Como">¿Como lo hacemos?</a>
+                        <a class="nav-link active" aria-current="page" href="./blog.html">¿Como lo hacemos?</a>
                         <a class="nav-link active" aria-current="page" href="./segurosMayores.html">Seguro médicos mayores</a>
                         <a class="nav-link active" aria-current="page" href="./seguroEducativo.html">Seguro educativo</a>
                         <a class="nav-link active" aria-current="page" href="./seguroRetiro.html">Seguro de retiro</a>
@@ -133,15 +133,35 @@
             </form>
         </section>
 
-        <section class="video__hero">
-            <video src="./assets/video.mp4" controls>
-                Tu navegador no admite el elemento <code>video</code>.
-            </video>
-            <div class="video__texto--sobreponer padding">
-                <h2 class="title">¿Cuánto necesito para <green>vivir tranquilo?</green></h2>
-                <p class="text">Para tener un buen retiro, necesitarás cubrir al menos el 70% de lo que hoy ganas. Si bien ya no hay gastos de hijos o hipoteca, los gastos de viaje, diversión, seguros médicos y enfermedades son más altos.</p>
-                <button clas="" class="button button--purple">Solicitar Asesoría</button>
-           </div>
+        <section class="video__hero video__hero--retiro">
+            <div class="two__cols">
+                <div class="video__button padding">
+                    <button type="button" class="button--play" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"/></svg>
+                    </button>
+                </div>
+                <div class="video__texto padding">
+                    <h2 class="title">¿Cuánto necesito para <green>vivir tranquilo?</green></h2>
+                    <p class="text">Para tener un buen retiro, necesitarás cubrir al menos el 70% de lo que hoy ganas. Si bien ya no hay gastos de hijos o hipoteca, los gastos de viaje, diversión, seguros médicos y enfermedades son más altos.</p>
+                    <button clas="" class="button button--purple">Solicitar Asesoría</button>
+               </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="frameYoutube" src="https://www.youtube.com/embed/Rpd_k33Cp4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>
 
         <section class="beneficios padding">

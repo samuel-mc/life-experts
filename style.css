@@ -112,6 +112,22 @@ html {
     color: var(--color-white) !important;
 }
 
+.button--play {
+    border: none;
+    background-color: var(--color-white);
+    padding: 12px;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--play svg{
+    height: 24px;
+}
+
 .w_all{
     width: 100% !important;
 }
@@ -301,7 +317,15 @@ green{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
+    transition: var(--in);
 }
+
+
+.carousel-item.carousel__cards {
+    display: none;
+    transition: var(--in);
+}
+
 
 .carousel__card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -309,7 +333,15 @@ green{
 
 .carousel__card img {
     width: 100%;
+    max-height: 500px;
+    max-width: auto;
 }
+
+.carousel__card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 
 .carousel__card h4 {
     font-size: var(--md);
@@ -331,6 +363,18 @@ green{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.section__opiniones .carousel-control-prev,
+.section__opiniones .carousel-control-next{
+    height: 40px !important;
+    visibility: visible;
+    background-color: var(--color-white);
+    opacity: 1;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 100%;
 }
 
 .section__nservicios {
@@ -426,27 +470,60 @@ green{
 
 /***** Banner video retiro***/
 .video__hero{
-    position: relative;
+    color: var(--color-white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/videoEducativos.png');
+    min-height: 480px;
 }
-.video__hero video{
+
+.video__hero--retiro {
+    background-image: url('./assets/mayoresVideo.png');
+    color: var(--color-white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 480px;
+}
+
+.video__hero .two__cols {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 480px;
+}
+/* .video__hero video{
     width: 100%;
     height: 1000px;
     margin: 0;
     padding: 0;
     object-fit: inherit;
+} */
+
+.video__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.video__texto--sobreponer{
-    position: absolute;
-    margin: 0;
-    top: 25%;
-    left: 40%;
+
+.video__texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 .video__hero h2{
     color: var(--color-white);
 }
 .video__hero p{
     color: var(--color-white);
+}
+
+#frameYoutube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+
 }
 /*BANNER WHATS Y COTIZAR GRID-- SEGUROS MAYORES */
 .segMayores__cotizar{
@@ -552,7 +629,8 @@ select option{
     margin: 3% 4%;
 }
 .banner__zoom img{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 /********FOOTER ******/
@@ -652,6 +730,7 @@ footer{
 
 .blog__video--grande {
     width: 100%;
+    aspect-ratio: 16/9;
 }
 
 @media (min-width: 320px) {
@@ -714,6 +793,13 @@ footer{
     }
     .cotizar__datos{
         padding: 0 6%;
+    }
+
+    .servicios__item {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
     }
 }
 
@@ -808,4 +894,10 @@ footer{
         flex-direction: row;
     }
     
+    .servicios__item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: space-between;
+    }
 }
